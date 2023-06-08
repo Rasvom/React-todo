@@ -1,8 +1,14 @@
 import React, { useState } from "react";
 import styles from "./TodoItem.module.css";
 
+interface todo {
+  id: number,
+  text: string,
+  completed: boolean
+}
+
 const TodoItem = () => {
-  const [todos, setTodos] = useState([
+  const [todos, setTodos] = useState<todo[]>([
     {
       id: 214125,
       text: "rwqrqw",
@@ -25,11 +31,11 @@ const TodoItem = () => {
     setTodos([todo, ...todos]);
   }
 
-  function removeTodo(id) {
+  function removeTodo(id:number) {
     setTodos(todos.filter((item) => item.id !== id));
   }
 
-  function onClickCheckbox(id) {
+  function onClickCheckbox(id: number) {
     setTodos(
       todos.map((item) => {
         if (item.id === id) {
