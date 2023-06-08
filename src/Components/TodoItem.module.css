@@ -1,0 +1,39 @@
+.wrap {
+  text-align: center;
+}
+.todos {
+  text-align: -webkit-center;
+}
+.todo {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding: 20px 30px;
+  border: 1px solid rgb(207, 207, 207);
+  border-radius: 3px;
+}
+.removeBtn {
+  background-color: transparent;
+  border: none;
+}
+.addBtn{
+    background-color: rgb(121, 121, 204);
+    padding: 5px 20px;
+    border: none;
+    border-radius: 3px;
+    margin-left: 3px;
+}
+.selected {
+  color: #f7cf1f;
+  background-color: #fdf6cc;
+}
+
+span {
+    cursor: pointer;
+}
+.input{
+    border: 1px solid gray;
+    border-radius: 3px;
+    padding: 3px 10px;
+}
